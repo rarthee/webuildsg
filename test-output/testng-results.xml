@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="14" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="33549" started-at="2020-10-05T07:38:44 SGT" finished-at="2020-10-05T07:39:18 SGT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="33549" started-at="2020-10-05T07:38:44 SGT" finished-at="2020-10-05T07:39:18 SGT">
+      <class name="webuildsg.MainPageTest">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:webuildsg.MainPageTest@75881071]" name="beforeclass" is-config="true" duration-ms="12400" started-at="2020-10-05T07:38:44 SGT" finished-at="2020-10-05T07:38:57 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="titletest()[pri:1, instance:webuildsg.MainPageTest@75881071]" name="titletest" duration-ms="297" started-at="2020-10-05T07:38:57 SGT" finished-at="2020-10-05T07:38:57 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titletest -->
+        <test-method status="PASS" signature="searchdata()[pri:2, instance:webuildsg.MainPageTest@75881071]" name="searchdata" duration-ms="696" started-at="2020-10-05T07:38:57 SGT" description="check if we enter value into search box, it retrieves results as expected" finished-at="2020-10-05T07:38:58 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchdata -->
+        <test-method status="PASS" signature="repostests()[pri:3, instance:webuildsg.MainPageTest@75881071]" name="repostests" duration-ms="1063" started-at="2020-10-05T07:38:58 SGT" description="validate if repos link is working" finished-at="2020-10-05T07:38:59 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repostests -->
+        <test-method status="PASS" signature="eventstests()[pri:4, instance:webuildsg.MainPageTest@75881071]" name="eventstests" duration-ms="918" started-at="2020-10-05T07:38:59 SGT" description="validate if events per week link is working" finished-at="2020-10-05T07:39:00 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventstests -->
+        <test-method status="PASS" signature="actvitiesproglnk()[pri:5, instance:webuildsg.MainPageTest@75881071]" name="actvitiesproglnk" duration-ms="1076" started-at="2020-10-05T07:39:00 SGT" description="validate if activities per programming language link is working" finished-at="2020-10-05T07:39:01 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actvitiesproglnk -->
+        <test-method status="PASS" signature="activeusergroups()[pri:6, instance:webuildsg.MainPageTest@75881071]" name="activeusergroups" duration-ms="1021" started-at="2020-10-05T07:39:01 SGT" description="validate if active usrs group link is working" finished-at="2020-10-05T07:39:02 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activeusergroups -->
+        <test-method status="PASS" signature="activerepositories()[pri:7, instance:webuildsg.MainPageTest@75881071]" name="activerepositories" duration-ms="835" started-at="2020-10-05T07:39:02 SGT" description="validate if active usrs group link is working" finished-at="2020-10-05T07:39:03 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activerepositories -->
+        <test-method status="PASS" signature="reposperprogLang()[pri:8, instance:webuildsg.MainPageTest@75881071]" name="reposperprogLang" duration-ms="1015" started-at="2020-10-05T07:39:03 SGT" description="validate if repositories per prog lang link is working" finished-at="2020-10-05T07:39:04 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reposperprogLang -->
+        <test-method status="PASS" signature="eventsdayofweek()[pri:9, instance:webuildsg.MainPageTest@75881071]" name="eventsdayofweek" duration-ms="1627" started-at="2020-10-05T07:39:04 SGT" description="validate if event by day of week link is working" finished-at="2020-10-05T07:39:05 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventsdayofweek -->
+        <test-method status="PASS" signature="eventsperweekofMon()[pri:10, instance:webuildsg.MainPageTest@75881071]" name="eventsperweekofMon" duration-ms="975" started-at="2020-10-05T07:39:05 SGT" description="validate if event per week of month link is working" finished-at="2020-10-05T07:39:06 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventsperweekofMon -->
+        <test-method status="PASS" signature="eventtimeofDay()[pri:11, instance:webuildsg.MainPageTest@75881071]" name="eventtimeofDay" duration-ms="931" started-at="2020-10-05T07:39:06 SGT" description="validate if event time of day link is working" finished-at="2020-10-05T07:39:07 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventtimeofDay -->
+        <test-method status="PASS" signature="eventlocations()[pri:12, instance:webuildsg.MainPageTest@75881071]" name="eventlocations" duration-ms="4017" started-at="2020-10-05T07:39:07 SGT" description="validate if event locations link is working" finished-at="2020-10-05T07:39:11 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventlocations -->
+        <test-method status="PASS" signature="staticnum()[pri:13, instance:webuildsg.MainPageTest@75881071]" name="staticnum" duration-ms="3936" started-at="2020-10-05T07:39:11 SGT" description="validate if the numbers within the static boxes are displaying as expected" finished-at="2020-10-05T07:39:15 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticnum -->
+        <test-method status="FAIL" signature="socmediaicons()[pri:14, instance:webuildsg.MainPageTest@75881071]" name="socmediaicons" duration-ms="1835" started-at="2020-10-05T07:39:15 SGT" description="validate if the numbers within the static boxes are displaying as expected" finished-at="2020-10-05T07:39:17 SGT">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+at org.junit.Assert.fail(Assert.java:91)
+at org.junit.Assert.assertTrue(Assert.java:43)
+at org.junit.Assert.assertTrue(Assert.java:54)
+at webuildsg.Pages.MainPage.socialmedialinks(MainPage.java:251)
+at webuildsg.MainPageTest.socmediaicons(MainPageTest.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- socmediaicons -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:webuildsg.MainPageTest@75881071]" name="teardown" is-config="true" duration-ms="787" started-at="2020-10-05T07:39:17 SGT" finished-at="2020-10-05T07:39:18 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webuildsg.MainPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
