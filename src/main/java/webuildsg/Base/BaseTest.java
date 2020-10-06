@@ -8,6 +8,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,7 +29,7 @@ public class BaseTest {
 		protected static WebDriver driver;
 		static InputStream inputStream;
 		static Properties prop;
-	
+		static JavascriptExecutor jse;
 		public static  Logger logger = LogManager.getLogger(BaseTest.class);
 		
 		public void driversetup() throws IOException {
@@ -107,6 +108,16 @@ public class BaseTest {
 			
 			return driver.getTitle();
 			
+		}
+		public static void scrolldown(int value){
+			
+			jse = (JavascriptExecutor)driver;
+			jse.executeScript("scroll(0, "+value+");");
+		}
+		public static void scrollup(){
+			
+			jse = (JavascriptExecutor)driver;
+			jse.executeScript("scroll(0, -550);");
 		}
 		public static void quit(){
 			

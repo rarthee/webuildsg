@@ -13,7 +13,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class Statictxtnumbers {
+public class ReadExcelClass {
 
 	static XSSFWorkbook myworkBook;
 	XSSFSheet ExcelWSheet;

@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
 import webuildsg.Base.BaseTest;
-import webuildsg.util.Statictxtnumbers;
+import webuildsg.util.ReadExcelClass;
 
 public class MainPage extends BaseTest{
 	
@@ -231,7 +231,7 @@ public MainPage evntloc() {
 }
 public MainPage staticnumbers() throws IOException {
 	
-	inputdata = (Map<String,String>) Statictxtnumbers.Readinputfile("C:\\Users\\Sahana Rangarajan\\eclipse-workspace\\webuildsg\\Staticnumbers.xlsx");
+	inputdata = (Map<String,String>) ReadExcelClass.Readinputfile("C:\\Users\\Sahana Rangarajan\\Git Repo\\webuildsg\\Staticnumbers.xlsx");
 	for(WebElement e : staticBox) {
 		System.out.print(gettxt(e));
 		//Check if the value of the webelement is same as that coming from the spreadsheet(inputdata)

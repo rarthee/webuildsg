@@ -22,7 +22,7 @@ public class MainPageTest extends BaseTest {
 		mainPage = new MainPage(driver);
 		PageFactory.initElements(driver, mainPage);
 	}
-	@Test(priority=1)
+	@Test(priority=1,description = "validate if the titles and texts are displayed as expected")
 	public void  titletest() {
 		
 		mainPage.validatetitles();
@@ -86,7 +86,7 @@ public class MainPageTest extends BaseTest {
 			e.printStackTrace();
 		}
 	}
-	@Test(priority=14,description = "validate if the numbers within the static boxes are displaying as expected")
+	@Test(priority=14,description = "validate the social media icons in the footer")
 	public void  socmediaicons()  {
 		mainPage.socialmedialinks();
 		

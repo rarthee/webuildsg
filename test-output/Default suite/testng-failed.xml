@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webuildsg.MainPageTest">
+      <class name="webuildsg.ReposPerPLTest">
         <methods>
-          <include name="teardown"/>
+          <include name="languagetest"/>
           <include name="beforeclass"/>
-          <include name="socmediaicons"/>
         </methods>
-      </class> <!-- webuildsg.MainPageTest -->
+      </class> <!-- webuildsg.ReposPerPLTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
