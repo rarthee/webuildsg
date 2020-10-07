@@ -1,5 +1,6 @@
 package webuildsg.Pages;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
+
 
 import webuildsg.Base.BaseTest;
 import webuildsg.util.ReadExcelClass;
@@ -67,22 +69,33 @@ public class MainPage extends BaseTest{
   
 
     Map<String,String> inputdata;
-    
-    
-    
+      
 	public MainPage(WebDriver driver) {
 		BaseTest.driver = driver; 
         PageFactory.initElements(driver, this);
+ 
+	}
+	public MainPage validateheader() {
+		click(mainwifi);
+		navigateback();
+		click(live);
+		navigateback();
+		click(sgdata);
+		navigateback();
+	
+		return this;
 	}
 	public MainPage validatetitles() {
+		
 		
 		implicitWait();
 		String titleval = gettxt(title);
 		Assert.assertEquals("we build!", titleval);
-		
 		implicitWait();
 		String subtitleval = gettxt(subtitle);
 		Assert.assertEquals("Using data to inspire variety, openness and projects for the design and engineering community", subtitleval);
+		
+				
 		return this;
 		
 		
@@ -243,8 +256,8 @@ public MainPage staticnumbers() throws IOException {
 }
 
 public MainPage socialmedialinks() {
-	
-	
+	implicitWait();
+	scrolldown(1000);
 	click(twitter);
 	System.out.println(getTitle());
 	implicitWait();

@@ -26,7 +26,7 @@ import org.openqa.selenium.interactions.Actions;
 public class BaseTest {
 
 
-		protected static WebDriver driver;
+		public static WebDriver driver;
 		static InputStream inputStream;
 		static Properties prop;
 		static JavascriptExecutor jse;

@@ -71,7 +71,7 @@ public class ReposPerPLPage extends BaseTest{
 
     }
 
-    public ReposPerPLPage selectlangs() throws IOException {
+    public ReposPerPLPage selectlangs() throws IOException, InterruptedException {
     	//Read Language.xlsx into a Map and validate if the Language is present on the page or not
     	implicitWait();
     	inputdata = (Map<String,String>) ReadExcelClass.Readinputfile("C:\\Users\\Sahana Rangarajan\\Git Repo\\webuildsg\\Languages.xlsx");
@@ -93,12 +93,13 @@ public class ReposPerPLPage extends BaseTest{
     		//Get the size of number of projects in each language
     		size = driver.findElements(By.xpath("//*[@id=\'repos-per-programming-language\']/p/a")).size();
     		System.out.println("size "+size);
-    		int scroll = 50;
+    		int scroll = 100;
     		for(int j=1;j<=size;j++) {
     			implicitWait();
     			//scroll pagedown after every occurrence so that the page moves down for each of the items 
     			scrolldown(scroll);
     			scroll = scroll + 50;
+    			Thread.sleep(2000);
     			//Iterate across each project in a specific language. Click them and come back
     			WebElement el = driver.findElement(By.xpath("//*[@id=\'repos-per-programming-language\']/p["+j+"]/a"));
     			System.out.println(j+" "+el.getText());
@@ -116,8 +117,8 @@ public class ReposPerPLPage extends BaseTest{
     }
     
     public ReposPerPLPage socialmedialinks() {
+    	scrolldown(1000);
     	
-    	refresh();
     	click(twitter);
     	implicitWait();
     	System.out.println(getTitle());
