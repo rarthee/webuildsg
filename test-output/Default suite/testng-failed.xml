@@ -7,6 +7,7 @@
         <methods>
           <include name="languagetest"/>
           <include name="beforeclass"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- webuildsg.ReposPerPLTest -->
     </classes>

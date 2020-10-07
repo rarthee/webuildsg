@@ -1,25 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="21" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="788895" started-at="2020-10-06T14:50:20 SGT" finished-at="2020-10-06T15:03:29 SGT">
+  <suite name="webuild SG" duration-ms="1509410" started-at="2020-10-07T21:35:51 SGT" finished-at="2020-10-07T22:01:00 SGT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="788895" started-at="2020-10-06T14:50:20 SGT" finished-at="2020-10-06T15:03:29 SGT">
-      <class name="webuildsg.ReposPerPLTest">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:webuildsg.ReposPerPLTest@43738a82]" name="beforeclass" is-config="true" duration-ms="6710" started-at="2020-10-06T14:50:21 SGT" finished-at="2020-10-06T14:50:27 SGT">
+    <test name="Test Main Page" duration-ms="62377" started-at="2020-10-07T21:35:51 SGT" finished-at="2020-10-07T21:36:53 SGT">
+      <class name="webuildsg.MainPageTest">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:webuildsg.MainPageTest@7a30d1e6]" name="beforeclass" is-config="true" duration-ms="6245" started-at="2020-10-07T21:35:51 SGT" finished-at="2020-10-07T21:35:57 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="titletest()[pri:1, instance:webuildsg.ReposPerPLTest@43738a82]" name="titletest" duration-ms="940" started-at="2020-10-06T14:50:27 SGT" description="Validate the title &amp; subtitle of Repositories per programming language page" finished-at="2020-10-06T14:50:28 SGT">
+        <test-method status="PASS" signature="validateheaderfields()[pri:1, instance:webuildsg.MainPageTest@7a30d1e6]" name="validateheaderfields" duration-ms="5164" started-at="2020-10-07T21:35:57 SGT" description="validate if header items are displayed and clickable" finished-at="2020-10-07T21:36:02 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateheaderfields -->
+        <test-method status="PASS" signature="titletest()[pri:2, instance:webuildsg.MainPageTest@7a30d1e6]" name="titletest" duration-ms="177" started-at="2020-10-07T21:36:02 SGT" description="validate if the titles and texts are displayed as expected" finished-at="2020-10-07T21:36:02 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titletest -->
-        <test-method status="PASS" signature="languagetest()[pri:2, instance:webuildsg.ReposPerPLTest@43738a82]" name="languagetest" duration-ms="781188" started-at="2020-10-06T14:50:28 SGT" description="Validate each of the languages is clickable on Repositories per programming language page" finished-at="2020-10-06T15:03:29 SGT">
+        <test-method status="PASS" signature="searchdata()[pri:3, instance:webuildsg.MainPageTest@7a30d1e6]" name="searchdata" duration-ms="558" started-at="2020-10-07T21:36:02 SGT" description="check if we enter value into search box, it retrieves results as expected" finished-at="2020-10-07T21:36:03 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchdata -->
+        <test-method status="PASS" signature="repostests()[pri:4, instance:webuildsg.MainPageTest@7a30d1e6]" name="repostests" duration-ms="999" started-at="2020-10-07T21:36:03 SGT" description="validate if repos link is working" finished-at="2020-10-07T21:36:04 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repostests -->
+        <test-method status="PASS" signature="eventstests()[pri:5, instance:webuildsg.MainPageTest@7a30d1e6]" name="eventstests" duration-ms="845" started-at="2020-10-07T21:36:04 SGT" description="validate if events per week link is working" finished-at="2020-10-07T21:36:05 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventstests -->
+        <test-method status="PASS" signature="actvitiesproglnk()[pri:6, instance:webuildsg.MainPageTest@7a30d1e6]" name="actvitiesproglnk" duration-ms="999" started-at="2020-10-07T21:36:05 SGT" description="validate if activities per programming language link is working" finished-at="2020-10-07T21:36:06 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actvitiesproglnk -->
+        <test-method status="PASS" signature="activeusergroups()[pri:7, instance:webuildsg.MainPageTest@7a30d1e6]" name="activeusergroups" duration-ms="864" started-at="2020-10-07T21:36:06 SGT" description="validate if active usrs group link is working" finished-at="2020-10-07T21:36:07 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activeusergroups -->
+        <test-method status="PASS" signature="activerepositories()[pri:8, instance:webuildsg.MainPageTest@7a30d1e6]" name="activerepositories" duration-ms="815" started-at="2020-10-07T21:36:07 SGT" description="validate if active usrs group link is working" finished-at="2020-10-07T21:36:07 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activerepositories -->
+        <test-method status="PASS" signature="reposperprogLang()[pri:9, instance:webuildsg.MainPageTest@7a30d1e6]" name="reposperprogLang" duration-ms="1013" started-at="2020-10-07T21:36:07 SGT" description="validate if repositories per prog lang link is working" finished-at="2020-10-07T21:36:08 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reposperprogLang -->
+        <test-method status="PASS" signature="eventsdayofweek()[pri:10, instance:webuildsg.MainPageTest@7a30d1e6]" name="eventsdayofweek" duration-ms="812" started-at="2020-10-07T21:36:08 SGT" description="validate if event by day of week link is working" finished-at="2020-10-07T21:36:09 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventsdayofweek -->
+        <test-method status="PASS" signature="eventsperweekofMon()[pri:11, instance:webuildsg.MainPageTest@7a30d1e6]" name="eventsperweekofMon" duration-ms="800" started-at="2020-10-07T21:36:09 SGT" description="validate if event per week of month link is working" finished-at="2020-10-07T21:36:10 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventsperweekofMon -->
+        <test-method status="PASS" signature="eventtimeofDay()[pri:12, instance:webuildsg.MainPageTest@7a30d1e6]" name="eventtimeofDay" duration-ms="819" started-at="2020-10-07T21:36:10 SGT" description="validate if event time of day link is working" finished-at="2020-10-07T21:36:11 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventtimeofDay -->
+        <test-method status="PASS" signature="eventlocations()[pri:13, instance:webuildsg.MainPageTest@7a30d1e6]" name="eventlocations" duration-ms="3708" started-at="2020-10-07T21:36:11 SGT" description="validate if event locations link is working" finished-at="2020-10-07T21:36:15 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eventlocations -->
+        <test-method status="PASS" signature="staticnum()[pri:14, instance:webuildsg.MainPageTest@7a30d1e6]" name="staticnum" duration-ms="1140" started-at="2020-10-07T21:36:15 SGT" description="validate if the numbers within the static boxes are displaying as expected" finished-at="2020-10-07T21:36:16 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticnum -->
+        <test-method status="PASS" signature="socmediaicons()[pri:15, instance:webuildsg.MainPageTest@7a30d1e6]" name="socmediaicons" duration-ms="36488" started-at="2020-10-07T21:36:16 SGT" description="validate the social media icons in the footer" finished-at="2020-10-07T21:36:52 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- socmediaicons -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:webuildsg.MainPageTest@7a30d1e6]" name="teardown" is-config="true" duration-ms="844" started-at="2020-10-07T21:36:52 SGT" finished-at="2020-10-07T21:36:53 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webuildsg.MainPageTest -->
+    </test> <!-- Test Main Page -->
+    <test name="Test Repos Per Language Page" duration-ms="1435973" started-at="2020-10-07T21:36:53 SGT" finished-at="2020-10-07T22:00:49 SGT">
+      <class name="webuildsg.ReposPerPLTest">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:webuildsg.ReposPerPLTest@10a035a0]" name="beforeclass" is-config="true" duration-ms="3573" started-at="2020-10-07T21:36:53 SGT" finished-at="2020-10-07T21:36:57 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="titletest()[pri:1, instance:webuildsg.ReposPerPLTest@10a035a0]" name="titletest" duration-ms="489" started-at="2020-10-07T21:36:57 SGT" description="Validate the title &amp; subtitle of Repositories per programming language page" finished-at="2020-10-07T21:36:57 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titletest -->
+        <test-method status="PASS" signature="languagetest()[pri:2, instance:webuildsg.ReposPerPLTest@10a035a0]" name="languagetest" duration-ms="1386668" started-at="2020-10-07T21:36:57 SGT" description="Validate each of the languages is clickable on Repositories per programming language page" finished-at="2020-10-07T22:00:04 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- languagetest -->
+        <test-method status="PASS" signature="socialmedia()[pri:3, instance:webuildsg.ReposPerPLTest@10a035a0]" name="socialmedia" duration-ms="44069" started-at="2020-10-07T22:00:04 SGT" description="Validate social media links" finished-at="2020-10-07T22:00:48 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- socialmedia -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:webuildsg.ReposPerPLTest@10a035a0]" name="teardown" is-config="true" duration-ms="1167" started-at="2020-10-07T22:00:48 SGT" finished-at="2020-10-07T22:00:49 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- webuildsg.ReposPerPLTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test Repos Per Language Page -->
+    <test name="Test Active Users Group Page" duration-ms="11015" started-at="2020-10-07T22:00:49 SGT" finished-at="2020-10-07T22:01:00 SGT">
+      <class name="webuildsg.ActiveUserGrpTest">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:webuildsg.ActiveUserGrpTest@646007f4]" name="beforeclass" is-config="true" duration-ms="4357" started-at="2020-10-07T22:00:49 SGT" finished-at="2020-10-07T22:00:53 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="titletest()[pri:1, instance:webuildsg.ActiveUserGrpTest@646007f4]" name="titletest" duration-ms="939" started-at="2020-10-07T22:00:53 SGT" description="Validate the title &amp; subtitle of Active user group page" finished-at="2020-10-07T22:00:54 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titletest -->
+        <test-method status="PASS" signature="headertest()[pri:2, instance:webuildsg.ActiveUserGrpTest@646007f4]" name="headertest" duration-ms="1437" started-at="2020-10-07T22:00:54 SGT" description="Validate the header of Active user group page" finished-at="2020-10-07T22:00:56 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headertest -->
+        <test-method status="PASS" signature="usergrouptest()[pri:3, instance:webuildsg.ActiveUserGrpTest@646007f4]" name="usergrouptest" duration-ms="3623" started-at="2020-10-07T22:00:56 SGT" description="Validate the Active user group list " finished-at="2020-10-07T22:00:59 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usergrouptest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:webuildsg.ActiveUserGrpTest@646007f4]" name="teardown" is-config="true" duration-ms="652" started-at="2020-10-07T22:00:59 SGT" finished-at="2020-10-07T22:01:00 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webuildsg.ActiveUserGrpTest -->
+    </test> <!-- Test Active Users Group Page -->
+  </suite> <!-- webuild SG -->
 </testng-results>
